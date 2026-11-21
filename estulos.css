@@ -1,0 +1,158 @@
+
+* {
+    margin: 0;
+        padding: 0;
+            box-sizing: border-box;
+            }
+
+            body {
+                font-family: Arial, sans-serif;
+                    background-color: #f2f5f9;
+                        color: #222;
+                        }
+
+                        header {
+                            background-color: #0756a5;
+                                color: white;
+                                    text-align: center;
+                                        padding: 30px 15px;
+                                        }
+
+                                        header h1 {
+                                            font-size: 34px;
+                                                margin-bottom: 10px;
+                                                }
+
+                                                .introducao {
+                                                    text-align: center;
+                                                        padding: 35px 15px;
+                                                        }
+
+                                                        .introducao h2 {
+                                                            color: #0756a5;
+                                                                font-size: 28px;
+                                                                    margin-bottom: 12px;
+                                                                    }
+
+                                                                    .introducao p {
+                                                                        color: #555;
+                                                                        }
+
+                                                                        .container-cartoes {
+                                                                            display: grid;
+                                                                                grid-template-columns: repeat(3, 1fr);
+                                                                                    gap: 25px;
+                                                                                        max-width: 1100px;
+                                                                                            margin: auto;
+                                                                                                padding: 20px;
+                                                                                                }
+
+                                                                                                .cartao {
+                                                                                                    height: 300px;
+                                                                                                        perspective: 1000px;
+                                                                                                        }
+
+                                                                                                        .cartao-interno {
+                                                                                                            position: relative;
+                                                                                                                width: 100%;
+                                                                                                                    height: 100%;
+                                                                                                                        transition: transform 0.7s;
+                                                                                                                            transform-style: preserve-3d;
+                                                                                                                            }
+
+                                                                                                                            .cartao.virado .cartao-interno {
+                                                                                                                                transform: rotateY(180deg);
+                                                                                                                                }
+
+                                                                                                                                .frente,
+                                                                                                                                .verso {
+                                                                                                                                    position: absolute;
+                                                                                                                                        width: 100%;
+                                                                                                                                            height: 100%;
+                                                                                                                                                padding: 25px;
+                                                                                                                                                    border-radius: 15px;
+                                                                                                                                                        display: flex;
+                                                                                                                                                            flex-direction: column;
+                                                                                                                                                                justify-content: center;
+                                                                                                                                                                    align-items: center;
+                                                                                                                                                                        text-align: center;
+                                                                                                                                                                            backface-visibility: hidden;
+                                                                                                                                                                                box-shadow: 0 4px 12px #0002;
+                                                                                                                                                                                }
+
+                                                                                                                                                                                .frente {
+                                                                                                                                                                                    background-color: #c62828;
+                                                                                                                                                                                        color: white;
+                                                                                                                                                                                        }
+
+                                                                                                                                                                                        .verso {
+                                                                                                                                                                                            background-color: #218838;
+                                                                                                                                                                                                color: white;
+                                                                                                                                                                                                    transform: rotateY(180deg);
+                                                                                                                                                                                                    }
+
+                                                                                                                                                                                                    .frente span,
+                                                                                                                                                                                                    .verso span {
+                                                                                                                                                                                                        font-weight: bold;
+                                                                                                                                                                                                            margin-bottom: 20px;
+                                                                                                                                                                                                                font-size: 14px;
+                                                                                                                                                                                                                }
+
+                                                                                                                                                                                                                .frente h3,
+                                                                                                                                                                                                                .verso h3 {
+                                                                                                                                                                                                                    font-size: 19px;
+                                                                                                                                                                                                                        margin-bottom: 15px;
+                                                                                                                                                                                                                        }
+
+                                                                                                                                                                                                                        .frente button,
+                                                                                                                                                                                                                        .verso button {
+                                                                                                                                                                                                                            margin-top: 20px;
+                                                                                                                                                                                                                                padding: 12px 20px;
+                                                                                                                                                                                                                                    border: none;
+                                                                                                                                                                                                                                        border-radius: 8px;
+                                                                                                                                                                                                                                            background-color: white;
+                                                                                                                                                                                                                                                color: #0756a5;
+                                                                                                                                                                                                                                                    font-weight: bold;
+                                                                                                                                                                                                                                                        cursor: pointer;
+                                                                                                                                                                                                                                                        }
+
+                                                                                                                                                                                                                                                        button:hover {
+                                                                                                                                                                                                                                                            background-color: #e5e5e5;
+                                                                                                                                                                                                                                                            }
+
+                                                                                                                                                                                                                                                            .sobre {
+                                                                                                                                                                                                                                                                max-width: 850px;
+                                                                                                                                                                                                                                                                    margin: 40px auto;
+                                                                                                                                                                                                                                                                        padding: 25px;
+                                                                                                                                                                                                                                                                            text-align: center;
+                                                                                                                                                                                                                                                                                line-height: 1.6;
+                                                                                                                                                                                                                                                                                }
+
+                                                                                                                                                                                                                                                                                .sobre h2 {
+                                                                                                                                                                                                                                                                                    color: #0756a5;
+                                                                                                                                                                                                                                                                                        margin-bottom: 15px;
+                                                                                                                                                                                                                                                                                        }
+
+                                                                                                                                                                                                                                                                                        footer {
+                                                                                                                                                                                                                                                                                            background-color: #0756a5;
+                                                                                                                                                                                                                                                                                                color: white;
+                                                                                                                                                                                                                                                                                                    text-align: center;
+                                                                                                                                                                                                                                                                                                        padding: 20px;
+                                                                                                                                                                                                                                                                                                        }
+
+                                                                                                                                                                                                                                                                                                        @media (max-width: 850px) {
+                                                                                                                                                                                                                                                                                                            .container-cartoes {
+                                                                                                                                                                                                                                                                                                                    grid-template-columns: repeat(2, 1fr);
+                                                                                                                                                                                                                                                                                                                        }
+                                                                                                                                                                                                                                                                                                                        }
+
+                                                                                                                                                                                                                                                                                                                        @media (max-width: 550px) {
+                                                                                                                                                                                                                                                                                                                            .container-cartoes {
+                                                                                                                                                                                                                                                                                                                                    grid-template-columns: 1fr;
+                                                                                                                                                                                                                                                                                                                                        }
+
+                                                                                                                                                                                                                                                                                                                                            .introducao h2 {
+                                                                                                                                                                                                                                                                                                                                                    font-size: 23px;
+                                                                                                                                                                                                                                                                                                                                                        }
+                                                                                                                                                                                                                                                                                                                                                        }
+                                                                                                                                                                                                                                                                                                                                                        
