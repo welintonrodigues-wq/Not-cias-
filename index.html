@@ -2,141 +2,137 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portal Notícias Brasil</title>
-  <link rel="stylesheet" href="estulos.css">
-  <script src="script.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alura News - Fake News</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header class="topbar">
-  <div class="container topbar-inner">
-    <a class="brand" href="#">
-      <span class="brand-mark">PN</span>
-      <span>Portal <strong>Notícias Brasil</strong></span>
-    </a>
-    <span id="today"></span>
-  </div>
+<header>
+    <h1>Alura News</h1>
+    <p>Aprenda a identificar notícias falsas!</p>
 </header>
 
-<nav class="nav">
-  <div class="container nav-inner">
-    <a class="active" href="#inicio">Início</a>
-    <a href="#brasil">Brasil</a>
-    <a href="#politica">Política</a>
-    <a href="#economia">Economia</a>
-    <a href="#esportes">Esportes</a>
-    <a href="#tecnologia">Tecnologia</a>
-  </div>
-</nav>
+<main>
+    <section class="introducao">
+        <h2>Fake News x Notícias Verdadeiras</h2>
+        <p>Clique nos cartões para descobrir a verdade!</p>
+    </section>
 
-<main class="container" id="inicio">
+    <section class="container-cartoes">
 
-<section class="intro">
-  <div>
-    <p class="eyebrow">INFORMAÇÃO EM DESTAQUE</p>
-    <h1>As notícias que ajudam você a entender o mundo.</h1>
-    <p class="intro-text">Acompanhe os principais assuntos do Brasil e do mundo.</p>
-  </div>
-  <form class="search" id="search-form">
-    <input id="search-input" type="search" placeholder="Buscar notícia...">
-    <button type="submit">Buscar</button>
-  </form>
-</section>
+        <article class="cartao">
+            <div class="cartao-interno">
+                <div class="frente">
+                    <span>NOTÍCIA FALSA</span>
+                    <h3>Vacinas possuem chips para controlar as pessoas.</h3>
+                    <button class="virar">Verificar notícia</button>
+                </div>
+                <div class="verso">
+                    <span>INFORMAÇÃO VERDADEIRA</span>
+                    <h3>Vacinas não possuem chips de rastreamento.</h3>
+                    <p>Vacinas são desenvolvidas para prevenir doenças.</p>
+                    <button class="virar">Voltar</button>
+                </div>
+            </div>
+        </article>
 
-<section class="section" id="brasil">
-  <div class="section-heading">
-    <div>
-      <p class="eyebrow">FIQUE POR DENTRO</p>
-      <h2>Últimas notícias</h2>
-    </div>
-    <span class="demo-tag">Notícias demonstrativas</span>
-  </div>
+        <article class="cartao">
+            <div class="cartao-interno">
+                <div class="frente">
+                    <span>NOTÍCIA FALSA</span>
+                    <h3>A Terra é completamente plana.</h3>
+                    <button class="virar">Verificar notícia</button>
+                </div>
+                <div class="verso">
+                    <span>INFORMAÇÃO VERDADEIRA</span>
+                    <h3>A Terra tem formato aproximadamente esférico.</h3>
+                    <p>Existem evidências científicas que comprovam isso.</p>
+                    <button class="virar">Voltar</button>
+                </div>
+            </div>
+        </article>
 
-  <div class="news-grid" id="news-grid">
+        <article class="cartao">
+            <div class="cartao-interno">
+                <div class="frente">
+                    <span>NOTÍCIA FALSA</span>
+                    <h3>Usamos somente 10% do nosso cérebro.</h3>
+                    <button class="virar">Verificar notícia</button>
+                </div>
+                <div class="verso">
+                    <span>INFORMAÇÃO VERDADEIRA</span>
+                    <h3>Utilizamos diferentes áreas do cérebro.</h3>
+                    <p>As áreas cerebrais trabalham em diferentes atividades.</p>
+                    <button class="virar">Voltar</button>
+                </div>
+            </div>
+        </article>
 
-    <article class="news-card featured" data-search="brasil educação tecnologia">
-      <div class="news-image image-blue"><span>BRASIL</span></div>
-      <div class="news-content">
-        <span class="category">Brasil</span>
-        <h3>Educação e tecnologia ampliam oportunidades de aprendizagem</h3>
-        <p>Conheça iniciativas educacionais e ferramentas digitais.</p>
-      </div>
-    </article>
+        <article class="cartao">
+            <div class="cartao-interno">
+                <div class="frente">
+                    <span>NOTÍCIA FALSA</span>
+                    <h3>Toda luz estranha no céu é uma nave alienígena.</h3>
+                    <button class="virar">Verificar notícia</button>
+                </div>
+                <div class="verso">
+                    <span>INFORMAÇÃO VERDADEIRA</span>
+                    <h3>Luzes no céu podem ter várias explicações.</h3>
+                    <p>Podem ser satélites, meteoros, aviões ou outros fenômenos.</p>
+                    <button class="virar">Voltar</button>
+                </div>
+            </div>
+        </article>
 
-    <article class="news-card" id="politica" data-search="política cidades">
-      <div class="news-image image-green"><span>POLÍTICA</span></div>
-      <div class="news-content">
-        <span class="category">Política</span>
-        <h3>Debates sobre serviços públicos movimentam cidades</h3>
-        <p>Entenda os principais assuntos da política.</p>
-      </div>
-    </article>
+        <article class="cartao">
+            <div class="cartao-interno">
+                <div class="frente">
+                    <span>NOTÍCIA FALSA</span>
+                    <h3>O WhatsApp rouba automaticamente todos os dados.</h3>
+                    <button class="virar">Verificar notícia</button>
+                </div>
+                <div class="verso">
+                    <span>INFORMAÇÃO VERDADEIRA</span>
+                    <h3>É importante conhecer as regras de privacidade.</h3>
+                    <p>Consulte as políticas e configurações do serviço.</p>
+                    <button class="virar">Voltar</button>
+                </div>
+            </div>
+        </article>
 
-    <article class="news-card" id="economia" data-search="economia negócios">
-      <div class="news-image image-orange"><span>ECONOMIA</span></div>
-      <div class="news-content">
-        <span class="category">Economia</span>
-        <h3>Pequenos negócios buscam novas oportunidades</h3>
-        <p>O comércio local investe em novas estratégias.</p>
-      </div>
-    </article>
+        <article class="cartao">
+            <div class="cartao-interno">
+                <div class="frente">
+                    <span>NOTÍCIA FALSA</span>
+                    <h3>O governo aprovou um salário mínimo de R$ 5.000.</h3>
+                    <button class="virar">Verificar notícia</button>
+                </div>
+                <div class="verso">
+                    <span>INFORMAÇÃO VERDADEIRA</span>
+                    <h3>Consulte sempre o valor oficial do salário mínimo.</h3>
+                    <p>Confira informações nos canais oficiais do Governo Federal.</p>
+                    <button class="virar">Voltar</button>
+                </div>
+            </div>
+        </article>
 
-    <article class="news-card" id="esportes" data-search="esportes futebol">
-      <div class="news-image image-red"><span>ESPORTES</span></div>
-      <div class="news-content">
-        <span class="category">Esportes</span>
-        <h3>Esporte comunitário incentiva participação de jovens</h3>
-        <p>Atividades esportivas fortalecem comunidades.</p>
-      </div>
-    </article>
+    </section>
 
-    <article class="news-card" id="tecnologia" data-search="tecnologia internet">
-      <div class="news-image image-purple"><span>TECNOLOGIA</span></div>
-      <div class="news-content">
-        <span class="category">Tecnologia</span>
-        <h3>Segurança digital: cuidados para proteger suas contas</h3>
-        <p>Saiba mais sobre proteção na internet.</p>
-      </div>
-    </article>
-
-  </div>
-  <p class="empty-state" id="empty-state" hidden>
-    Nenhuma notícia encontrada.
-  </p>
-</section>
-
-<section class="about">
-  <p class="eyebrow">NOSSO COMPROMISSO</p>
-  <h2>Informação com responsabilidade</h2>
-  <p>Nosso objetivo é compartilhar informação com qualidade e transparência.</p>
-</section>
-
+    <section class="sobre">
+        <h2>Por que combater as Fake News?</h2>
+        <p>
+            As notícias falsas podem confundir as pessoas e espalhar informações
+            incorretas. Antes de compartilhar uma notícia, verifique a fonte.
+        </p>
+    </section>
 </main>
 
-<footer class="footer">
-  <div class="container footer-inner">
-    <span>© <span id="year"></span> Portal Notícias Brasil</span>
-    <span>Informação com responsabilidade.</span>
-  </div>
+<footer>
+    <p>Projeto educativo - Alura News | Notícias Falsas x Verdadeiras</p>
 </footer>
 
+<script src="script.js"></script>
 </body>
-</html>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <span>NOTÍCIA FALSA</span>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <h3>O governo aprovou um salário mínimo de R$ 5.000.</h3>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <button class="virar">Verificar notícia</button>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        </div>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <div class="verso">
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <span>INFORMAÇÃO VERDADEIRA</span>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <h3>Consulte sempre o valor oficial do salário mínimo.</h3>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <p>Confira informações nos canais oficiais do Governo Federal.</p>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <button class="virar">Voltar</button>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        </div>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    </div>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            </article>
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                </section>
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <section class="sobre">
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <h2>Por que                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+</html>
